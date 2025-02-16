@@ -1,5 +1,5 @@
 import path from 'path'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router'
 import { InteractiveHoverButton , ShinyButton , ScrollProgress } from '../ui'
 import useStore from '../context/store'

@@ -17,7 +17,9 @@ import { Input } from "./input";
 import ItemCard from "../ItemCard";
 import { MagicCard } from "../magicui/magic-card";
 import { BoxReveal } from "../magicui/box-reveal";
+import { Alert } from "./alert";
 export {
+    Alert,
     BoxReveal,
     MagicCard,
     ItemCard,

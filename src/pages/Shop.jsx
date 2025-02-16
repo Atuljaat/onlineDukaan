@@ -14,7 +14,6 @@ function Shop() {
   const input = useRef(null)
   const [productsBackup, setProductsBackup] = useState([])
 
-
   useEffect(() => {
     const data = getProfuctsInfo()
     .then((data) => {
@@ -34,8 +33,6 @@ function searchProducts (e) {
   e.preventDefault();
   if (!search) {
     setProducts(productsBackup)
-    console.log('No search query')
-    console.log(productsBackup)
   } else {
     let filteredProducts = products.filter((item)=>{
       return item.title.toLowerCase().includes(search.toLowerCase())
@@ -49,7 +46,6 @@ if (loading) {
 } else {
   return (
     <>
-    <Button onClick={() => console.log(cartItems)} > ok </Button>
     <form onSubmit={searchProducts} >
       <div>
         <div className='flex flex-row justify-center gap-5 my-5'>

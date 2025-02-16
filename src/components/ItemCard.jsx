@@ -13,7 +13,7 @@ function ItemCard({image,title,description,price,data}) {
     const cartItems = useStore((state) => state.cartItems)
   return (
     <>
-    <Card className='w-auto pb-5'>
+    <Card className='w-auto pb-5 hover:scale-105 transform transition duration-300 ease-in-out'>
         <CardHeader>
             <img 
             src={image} 
@@ -37,14 +37,14 @@ function ItemCard({image,title,description,price,data}) {
             <div>
             <Button className="w-full" onClick={() => {
                 addToCart(data);
-                console.log(cartItems);
+                
                 }} >
                 Add to Cart
                 </Button>
             </div>
             <div>
                 <Button className="w-full">
-                More Info
+                    More Info
                 </Button>
             </div>
       </div>
